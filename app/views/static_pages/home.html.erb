@@ -1,15 +1,49 @@
 <% provide(:title, "Home") %>
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
 
-  <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
-</div>
+<%= stylesheet_link_tag    'style', media: 'all',
+                                          'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'nav', 'data-turbolinks-track': 'reload' %>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
+</head>
+
+
+<body>
+
+  <div class="lines">
+    <%= image_tag("lines.png", alt: "Plug and farm")%>
+  </div>
+  <div id="overlay" class="close">
+    <a id="close" style="cursor: pointer;">&#215;</a>
+    <a href="/">Home</a>
+    <a href="/contact">Services</a>
+    <a href="/contact">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/contact">Login / Register</a>
+  </div>
+  <div class="wrapper">
+    <nav>
+      <a href="/" class="logo"><%= image_tag("logo.png", alt: "Plug and farm logo", id: "logo")%></a>
+      <div class="desktop">
+        <a href="/">Home</a>
+        <a href="/contact">Services</a>
+        <a href="/contact">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/contact" class="btnSmall">
+          <p>Login / Register</p>
+        </a>
+      </div>
+      <div class="mobile">
+        <a id="open" style="cursor: pointer;">&#9776;</a>
+      </div>
+    </nav>
+    <div class="landing">
+      <h1>THE NEW FARMING ERA</h1>
+      <h2>Bring your farm to your screen.</h2>
+      <a href="/contact" class="btnLarge">
+        <p id="btnText">GET STARTED</p>
+      </a>
+    </div>
+  </div>
+
+</body>
