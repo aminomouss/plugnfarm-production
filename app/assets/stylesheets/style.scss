@@ -30,7 +30,7 @@ html {
 body {
 
     background-repeat: no-repeat;
-    background-size: calc(50vh + 30vw) auto;
+    background-size: calc(50vh + 25vw) auto;
     background-position: bottom right;
     background-color: $--main-green;
     height: 100vh;
@@ -120,10 +120,12 @@ a {
 
 
 .wrapper {
+    max-height: 55vh;
     width: 90%;
     margin: 0 auto;
-    max-height: 2000px;
+
 }
+
 
 
 
@@ -143,7 +145,8 @@ a {
 
 
 .logo img{
-    height: 167.5px;
+
+    max-height: 130px;
     z-index: -1;
     position: absolute;
 }
@@ -222,16 +225,16 @@ a:hover {
 
 
 .landing {
-    margin-top: 13em;
+    margin-top: 20vh;
     width: 600px;
 }
 
 .landing h2 {
-    margin-top: 0.45em;
+    margin-top: 1.5vh;
 }
 
 .btnLarge {
-    margin-top: 3.8em;
+    margin-top: 5vh;
 }
 
 
@@ -240,7 +243,7 @@ a:hover {
 
 /*-----Responsive--------------------------------------------------------------*/
 
-@media (max-width: 900px) {
+@media (max-device-width: 430px), (max-width: 430px) {
     .desktop {
         display: none;
     }
@@ -259,15 +262,15 @@ a:hover {
         height: 100px;
     }
     body {
-        background-size: auto 50vh;
+        background-size: 100vw auto;
         background-position: bottom;
     }
     h1 {
-        font-size: calc(20px + 2vw);
+        font-size: 80px;
         text-align: center;
     }
     h2 {
-        font-size: calc(10.38px + 1.076vw);
+        font-size: 40px;
         text-align: center;
         padding-top: 10px;
 
@@ -276,7 +279,15 @@ a:hover {
         display: none;
     }
     .btnLarge {
-        margin-left: calc(-130px + 45vw);
+      height: calc(64.58px * 2.5);
+      width: calc(261px * 2.5);
+        margin-left: calc(-330px + 45vw);
+    }
+      #btnText {
+      font-size: 80px;
+    }
+    .landing {
+      padding-top: 13vh;
     }
 }
 
