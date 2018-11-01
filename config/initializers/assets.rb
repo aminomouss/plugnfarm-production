@@ -16,3 +16,10 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( style.css )
 Rails.application.config.assets.precompile += %w( nav.js )
+
+
+
+Rails.application.config.assets.precompile +=%w( util.scss main.scss external/bootstrap.min.css external/font-awesome.min.css external/animate.css external/hamburgers.min.css external/animsition.min.css external/select2.min.css external/daterangepicker.css )
+
+
+Rails.application.config.assets.precompile +=%w( main.js external/jquery-3.2.1.min.js external/animsition.min.js external/popper.js external/bootstrap.min.js external/select2.min.js external/moment.min.js external/daterangepicker.js external/countdowntime.js )
