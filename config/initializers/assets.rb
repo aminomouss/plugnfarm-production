@@ -23,3 +23,6 @@ Rails.application.config.assets.precompile +=%w( util.scss main.scss external/bo
 
 
 Rails.application.config.assets.precompile +=%w( main.js external/jquery-3.2.1.min.js external/animsition.min.js external/popper.js external/bootstrap.min.js external/select2.min.js external/moment.min.js external/daterangepicker.js external/countdowntime.js )
+
+
+Rails.application.config.assets.precompile += %w( fontawesome-webfont.ttf fontawesome-webfont.woff2 fontawesome-webfont.woff )

@@ -1,13 +1,14 @@
 <% provide(:title, "Contact") %>
 
 
-<!-- , 'external/bootstrap.min.css', 'external/font-awesome.min.css', 'external/animate.css', 'external/hamburgers.min.css', 'external/animsition.min.css', 'external/select2.min.css', 'external/daterangepicker.css'
+<!-- , 'external/bootstrap.min.css', 'external/animate.css', 'external/hamburgers.min.css', 'external/animsition.min.css', 'external/select2.min.css', 'external/daterangepicker.css'
 -->
-<%= stylesheet_link_tag    'util', 'main',  media: 'all',
+<%= stylesheet_link_tag    'util', 'main', 'external/font-awesome.min.css',  media: 'all',
                                           'data-turbolinks-track': 'reload' %>
-<%= javascript_include_tag 'main', 'external/jquery-3.2.1.min.js', 'external/animsition.min.js', 'external/popper.js', 'external/bootstrap.min.js', 'external/select2.min.js', 'external/moment.min.js', 'external/daterangepicker.js', 'external/countdowntime.js',  'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'main', 'data-turbolinks-track': 'reload' %>
 
-
+<!-- , 'external/jquery-3.2.1.min.js', 'external/animsition.min.js', 'external/popper.js',
+ 'external/bootstrap.min.js', 'external/select2.min.js', 'external/moment.min.js', 'external/daterangepicker.js', 'external/countdowntime.js' -->
 
 </head>
 
@@ -40,14 +41,14 @@
   </div>
 
 
-
+  <span class="contact100-form-title">
+    The project is under construction<br>Be part of it by contacting us !
+  </span>
   	<div class="container-contact100">
 
   		<div class="wrap-contact100">
   			<form class="contact100-form validate-form">
-  				<span class="contact100-form-title">
-  					Send Us A Message
-  				</span>
+
 
   				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
   					<input class="input100" type="text" name="name" placeholder="Full Name">
