@@ -144,6 +144,10 @@ a {
 }
 
 
+#overlay a:not(:first-child) {
+  font-size: 50px;
+}
+
 .logo img{
 
     max-height: 130px;
@@ -221,6 +225,8 @@ a:hover {
 
 
 
+
+
 /*-----Landing--------------------------------------------------------------*/
 
 
@@ -244,6 +250,9 @@ a:hover {
 /*-----Responsive--------------------------------------------------------------*/
 
 @media (max-device-width: 430px), (max-width: 430px) {
+
+
+
     .desktop {
         display: none;
     }
@@ -259,7 +268,7 @@ a:hover {
         margin-top: 7em;
     }
     .logo img {
-        height: 100px;
+        height: 150px;
     }
     body {
         background-size: 100vw auto;
@@ -287,7 +296,7 @@ a:hover {
       font-size: 80px;
     }
     .landing {
-      padding-top: 13vh;
+      padding-top: 12vh;
     }
 }
 
