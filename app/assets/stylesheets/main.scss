@@ -111,10 +111,7 @@ nav a:not(:first-child){
 #open {
     font-size: 40px;
 }
-#close {
-    font-size: 70px;
-    padding-right: 20px;
-}
+
 
 #overlay a {
   font-size: 50px;
@@ -129,16 +126,23 @@ nav a:not(:first-child){
     background-color: $--main-green;
 }
 
+
+
 #overlay a:not(:first-child) {
     width: 100%;
     display: block;
     margin: 14vh 0 0 0;
 }
 
+#overlay a:nth-child(2)  {
+  margin: 10vh 0 0 0;
+}
 
 #overlay a:first-child {
     float: right;
     margin: 35px 4.2% 0 0;
+    font-size: 70px;
+    padding-right: 20px;
 }
 
 

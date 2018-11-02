@@ -148,6 +148,8 @@ a {
   font-size: 50px;
 }
 
+
+
 .logo img{
 
     max-height: 130px;
@@ -198,6 +200,9 @@ nav a:not(:first-child){
     margin: 14vh auto 0 auto;
 }
 
+#overlay a:nth-child(2)  {
+  margin: 10vh auto 0 auto;
+}
 
 #overlay a:first-child {
     float: right;
