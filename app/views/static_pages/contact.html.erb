@@ -1,0 +1,88 @@
+<% provide(:title, "Contact") %>
+
+
+<!-- , 'external/bootstrap.min.css', 'external/animate.css', 'external/hamburgers.min.css', 'external/animsition.min.css', 'external/select2.min.css', 'external/daterangepicker.css'
+-->
+<%= stylesheet_link_tag    'util', 'main', 'external/font-awesome.min.css',  media: 'all',
+                                          'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'main', 'nav', 'data-turbolinks-track': 'reload' %>
+
+<!-- , 'external/jquery-3.2.1.min.js', 'external/animsition.min.js', 'external/popper.js',
+ 'external/bootstrap.min.js', 'external/select2.min.js', 'external/moment.min.js', 'external/daterangepicker.js', 'external/countdowntime.js' -->
+
+</head>
+
+<body>
+
+  <div id="overlay" class="close">
+    <a id="close" style="cursor: pointer;">&#215;</a>
+    <a href="/">Home</a>
+    <a href="/contact">Services</a>
+    <a href="/contact">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/contact">Login / Register</a>
+  </div>
+  <div class="wrapper">
+    <nav>
+      <a href="/" class="logo"><%= image_tag("logo.png", alt: "Plug and farm logo", id: "logo")%></a>
+      <div class="desktop">
+        <a href="/">Home</a>
+        <a href="/contact">Services</a>
+        <a href="/contact">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/contact" class="btnSmall">
+          <p>Login / Register</p>
+        </a>
+      </div>
+      <div class="mobile">
+        <a id="open" style="cursor: pointer;">&#9776;</a>
+      </div>
+    </nav>
+  </div>
+
+
+  <span class="contact100-form-title" style="padding-bottom: 10px;px;color: black;">
+    The project is under construction
+  </span>
+  <span class="contact100-form-title" style="padding-top: 0px;padding-bottom: 10.5vh;color: white;font-size: 25px;">Be part of it by contacting us !</span>
+  	<div class="container-contact100">
+
+  		<div class="wrap-contact100">
+  			<form class="contact100-form validate-form">
+
+
+  				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+  					<input class="input100" type="text" name="name" placeholder="Full Name">
+  					<span class="focus-input100"></span>
+  				</div>
+
+  				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
+  					<input class="input100" type="text" name="email" placeholder="E-mail">
+  					<span class="focus-input100"></span>
+  				</div>
+
+  				<div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
+  					<input class="input100" type="text" name="phone" placeholder="Phone">
+  					<span class="focus-input100"></span>
+  				</div>
+
+  				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+  					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+  					<span class="focus-input100"></span>
+  				</div>
+
+  				<div class="container-contact100-form-btn">
+  					<button class="contact100-form-btn">
+  						<span>
+  							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+  							Send
+  						</span>
+  					</button>
+  				</div>
+  			</form>
+  		</div>
+  	</div>
+
+
+
+</body>

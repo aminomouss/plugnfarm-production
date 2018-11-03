@@ -1,0 +1,327 @@
+@import "bootstrap-sprockets";
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+
+
+/*-----Global--------------------------------------------------------------*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+    $--main-green: #72CC75;
+    $--main-green-darker: #009405;
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: calc(50vh + 25vw) auto;
+    background-position: bottom right;
+    background-color: $--main-green;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+h1 {
+
+    font-size: calc(10px + 2vw);
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: calc(5.38px + 1.076vw);
+    color: white;
+    font-weight: normal;
+
+}
+
+a {
+    font-weight: normal;
+    font-size: 22;
+    color: black;
+    text-decoration: none;
+}
+
+.btnSmall {
+    background-color: $--main-green-darker;
+    border-radius: 10px;
+    display: inline-block;
+    height: 45px;
+    text-align: center;
+    padding: 0;
+    -webkit-box-shadow: 0px -0px 18px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px -0px 18px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.5);
+}
+
+
+
+.btnSmall p {
+    color: white;
+    display: inline-block;
+    padding-top: 11px;
+    padding-right: 23.1px;
+    padding-bottom: 14px;
+    padding-left: 25.6px;
+
+}
+
+.btnSmall:hover, .btnLarge:hover {
+  background-color: #007000;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.9);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.9);
+    box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.9);
+}
+
+.btnSmall, .btnLarge {
+    transition: all 0.5s;
+}
+
+.btnLarge {
+    background-color: $--main-green-darker;
+    border-radius: 10px;
+    display: inline-block;
+    height: 64.58px;width: 261px;
+    text-align: center;
+    padding: 0;
+    -webkit-box-shadow: 0px -0px 18px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px -0px 18px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px -0px 18px 0px rgba(50, 50, 50, 0.5);
+
+}
+
+#btnText {
+    font-size: 25px;
+    color: white;
+    font-weight: normal;
+    padding-top: 14px;
+    padding-right: 48.1px;
+    padding-bottom: 15.6px;
+    padding-left: 48.6px;
+}
+
+
+.wrapper {
+    max-height: 55vh;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+/*-----Nav--------------------------------------------------------------*/
+
+#open {
+  font-size: 40px;
+}
+
+#close {
+  font-size: 70px;
+  padding-right: 20px;
+
+}
+
+
+#overlay a:not(:first-child) {
+  font-size: 50px;
+}
+
+
+
+.logo img{
+
+    max-height: 130px;
+    z-index: -1;
+    position: absolute;
+}
+
+
+.mobile {
+    display: none;
+}
+.close {
+    display: none;
+}
+
+nav {
+    text-align: right;
+    padding-top: 34px;
+}
+
+
+nav a:not(:first-child){
+    margin-left: 5vw;
+}
+
+
+.logo {
+    float: left;
+}
+
+#logo {
+    z-index: 1;
+}
+
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    background-color: $--main-green;
+}
+
+#overlay a:not(:first-child) {
+    width: 50%;
+    display: block;
+    margin: 14vh auto 0 auto;
+}
+
+#overlay a:nth-child(2)  {
+  margin: 10vh auto 0 auto;
+}
+
+#overlay a:first-child {
+    float: right;
+    margin: 35px 4.2% 0 0;
+}
+
+
+#overlay a:hover {
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#hideme {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+/*-----Landing--------------------------------------------------------------*/
+
+
+.landing {
+    margin-top: 20vh;
+    width: 600px;
+}
+
+.landing h2 {
+    margin-top: 1.5vh;
+}
+
+.btnLarge {
+    margin-top: 5vh;
+}
+
+
+
+
+
+/*-----Responsive--------------------------------------------------------------*/
+
+@media (max-device-width: 430px), (max-width: 430px) {
+
+
+
+    .desktop {
+        display: none;
+    }
+    .mobile {
+
+        display: block;
+        margin-top: 23px;
+        margin-right: 15px;
+    }
+
+    .landing {
+        width: 100%;
+        margin-top: 7em;
+    }
+    .logo img {
+        height: 150px;
+    }
+    body {
+        background-size: 100vw auto;
+        background-position: bottom;
+    }
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10px;
+
+    }
+    .lines {
+        display: none;
+    }
+    .btnLarge {
+      height: calc(64.58px * 2.5);
+      width: calc(261px * 2.5);
+        margin-left: calc(-330px + 45vw);
+    }
+      #btnText {
+        padding-top: 3.8%;
+        padding-bottom: auto;
+      font-size: 80px;
+    }
+    .landing {
+      padding-top: 12vh;
+    }
+}
+
+
+
+
+
+
+
+
+.lines {
+
+    z-index: -4;
+    position: fixed;
+}
+
+.lines img {
+    height: 100vh;
+    padding-left: 0;
+    width: 50vw;
+}
