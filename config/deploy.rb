@@ -27,8 +27,7 @@ append :linked_files, "config/database.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets"
 
 set :nginx_config_name, 'mon_site'
-set :nginx_server_name, 'www.plugnfarm.com'
-set :nginx_server_name2, 'plugnfarm.com'
+set :nginx_server_name, '68.183.115.77'
 set :pum_workers, 1
 
 # Default value for default_env is {}
