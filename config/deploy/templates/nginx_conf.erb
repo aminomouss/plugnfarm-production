@@ -11,15 +11,10 @@ end
   <%= server %><% end %>
 }
 <% if fetch(:nginx_use_ssl) -%>
-server {
-  listen 80;
-  server_name plugnfarm.com;
-  return 301 https://$host$1$request_uri;
-}
 
 server {
   listen 80;
-  server_name www.plugnfarm.com;
+  server_name plugnfarm.com;
   return 301 https://$host$1$request_uri;
 }
 
