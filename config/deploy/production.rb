@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server 'plugnfarm.com', user: 'root', roles: %w{app web db}, ssh_options: { forward_agent: true }
+server 'www.plugnfarm.com', user: 'root', roles: %w{app web db}, ssh_options: { forward_agent: true }
 
 
 # role-based syntax
