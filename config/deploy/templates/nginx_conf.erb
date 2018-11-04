@@ -12,13 +12,14 @@ end
 }
 <% if fetch(:nginx_use_ssl) -%>
 server {
-  server_name <%= fetch(:nginx_server_name2) %>;
-  rewrite ^(.*) www.<%= fetch(:nginx_server_name2) %>$1 permanent;
+  listen 80;
+  server_name plugnfarm.com;
+  return 301 https://$host$1$request_uri;
 }
 
 server {
   listen 80;
-  server_name <%= fetch(:nginx_server_name) %>;
+  server_name www.plugnfarm.com;
   return 301 https://$host$1$request_uri;
 }
 
