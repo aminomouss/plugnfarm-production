@@ -8,7 +8,6 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 server 'www.plugnfarm.com', user: 'root', roles: %w{app web db}, ssh_options: { forward_agent: true }
-server 'plugnfarm.com', user: 'root', roles: %w{app web db}, ssh_options: { forward_agent: true }
 
 
 # role-based syntax
